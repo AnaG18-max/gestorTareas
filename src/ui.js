@@ -5,7 +5,7 @@ export const renderTasks = () => {
  const taskList = document.getElementById("task-list");
  taskList.innerHTML = ""; 
  const task = getTasks();
- tasks.forEach((task) => {
+ task.forEach((task) => {
     const li = document.createElement("li");
     li.setAttribute("data-id", task.id);
     
